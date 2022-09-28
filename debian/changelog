@@ -1,0 +1,91 @@
+cl-babel (20200719.gitf892d05-2) unstable; urgency=medium
+
+  * Disable clisp autopkgtest on ppc64el, it is not reliable there
+  * Bump to S-V 4.6.0
+
+ -- Sébastien Villemot <sebastien@debian.org>  Wed, 08 Sep 2021 20:19:27 +0200
+
+cl-babel (20200719.gitf892d05-1) unstable; urgency=medium
+
+  [ Sébastien Villemot ]
+  * New upstream snapshot
+  * d/copyright: reflect upstream changes
+  * Mark autopkgtests as superficial
+  * debian/rules: simplify using debhelper 12.8’s execute_after_* rules
+  * Bump to debhelper 13
+  * Bump to S-V 4.5.1
+  * Add lintian overrides for test files not in UTF-8
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Thu, 26 Nov 2020 17:29:04 +0100
+
+cl-babel (20200116.gitaeed2d1-1) unstable; urgency=medium
+
+  * New upstream snapshot
+  * Bump to debhelper compat level 12
+  * Add Rules-Requires-Root: no
+  * Bump S-V to 4.5.0
+
+ -- Sébastien Villemot <sebastien@debian.org>  Sun, 26 Jan 2020 19:22:14 +0100
+
+cl-babel (20171213.git546fa82-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * d/watch now tracks git HEAD, as Quicklisp does.
+  * Remove obsolete README.Debian.
+  * Remove ${shlibs:Depends}, this is an arch:all package.
+  * Mark the package as M-A foreign.
+  * Ship README.md.
+  * Add Depends on cl-trivial-gray-streams, needed by babel-streams.
+  * Bump to debhelper compat level 11.
+  * Rewrite d/rules using dh.
+  * Rewrite d/copyright using machine-readable format 1.0.
+  * Bump S-V to 4.1.4.
+  * Update package description.
+  * Add an autopkgtest that loads the ASDF systems on sbcl, ecl and clisp.
+    Running the testsuite is not yet possible, because hu.dwim.stefil is not
+    packaged in Debian.
+  * Add myself to Uploaders.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Fri, 27 Apr 2018 15:37:17 +0200
+
+cl-babel (0.3.0+20091229-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update Vcs-* fields for move to salsa.
+  * Set Maintainer to debian-common-lisp@l.d.o.
+  * Remove Build-Depends on dh-lisp.
+  * Use secure URL for Homepage.
+  * Move to 3.0 (quilt) source format.
+  * Write a d/watch file.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Thu, 05 Apr 2018 22:19:35 +0200
+
+cl-babel (0.3.0+20091229-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Don't install non-existent files (Closes: #823044).
+  * Add explicit debian/source/format.
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sat, 26 Nov 2016 16:54:50 +0500
+
+cl-babel (0.3.0+20091229-1) unstable; urgency=low
+
+  * New upstream with minor changes.
+
+ -- Peter Van Eynde <pvaneynd@debian.org>  Thu, 31 Dec 2009 14:42:05 +0100
+
+cl-babel (0.3.0+20090601-2) unstable; urgency=low
+
+  * Fixed debian/copyright file to include all authors
+
+ -- Peter Van Eynde <pvaneynd@debian.org>  Tue, 10 Nov 2009 07:05:09 +0100
+
+cl-babel (0.3.0+20090601-1) unstable; urgency=low
+
+  * First packaged.
+  * Added dummy watch file
+
+ -- Peter Van Eynde <pvaneynd@debian.org>  Sat, 07 Nov 2009 14:25:03 +0100

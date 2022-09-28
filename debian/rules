@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+execute_after_dh_install:
+	rm debian/cl-babel/usr/share/common-lisp/source/babel/tests/gen-test-files.sh

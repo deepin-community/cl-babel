@@ -1,0 +1,12 @@
+Test-Command: sbcl --script debian/tests/runtests.lisp
+Depends: @, sbcl
+Restrictions: allow-stderr, superficial
+
+Test-Command: ecl -norc -shell debian/tests/runtests.lisp
+Depends: @, ecl
+Restrictions: allow-stderr, superficial
+
+Test-Command: clisp -norc debian/tests/runtests.lisp
+Depends: @, clisp
+Restrictions: allow-stderr, superficial
+Architecture: !ppc64el

@@ -1,0 +1,4 @@
+# Those files are deliberately not in UTF-8
+cl-babel: national-encoding usr/share/common-lisp/source/babel/tests/ebcdic-us.txt
+cl-babel: national-encoding usr/share/common-lisp/source/babel/tests/utf-16-with-le-bom.txt
+cl-babel: national-encoding usr/share/common-lisp/source/babel/tests/utf-16.txt
